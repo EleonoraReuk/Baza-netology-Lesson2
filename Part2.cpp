@@ -25,22 +25,22 @@ public:
 
 int main() {
 
-	cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: ";
+	cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: ";
 	string answer;
 	cin >> answer;
 
 	Counter counter;
 
 
-	if (answer == "‰‡") {
+	if (answer == "–¥–∞") {
 		int initial_value;
-		cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡: ";
+		cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
 		cin >> initial_value;
 		counter = Counter(initial_value);
 	}
 
 	while (true) {
-		cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'x'): ";
+		cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ 'x'): ";
 		char command;
 		cin >> command;
 
@@ -54,7 +54,7 @@ int main() {
 			cout << counter.get_value() << endl;
 		}
 		else if (command == 'x') {
-			cout << "ƒÓ Ò‚Ë‰‡ÌËˇ!" << endl;
+			cout << "–î–æ —Å–≤–∏–¥–∞–Ω–∏—è!" << endl;
 			break;
 		}
 	}
