@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -28,7 +28,7 @@ public:
 			return num1 / num2;
 		}
 		else {
-			cout << "Äåëåíèå íà íîëü!" << endl;
+			cout << "Ğ”ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° Ğ½Ğ¾Ğ»ÑŒ!" << endl;
 			return 0.0;
 		}
 	}
@@ -37,7 +37,7 @@ public:
 			return num2 / num1;
 		}
 		else {
-			cout << "Äåëåíèå íà íîëü!" << endl;
+			cout << "Ğ”ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° Ğ½Ğ¾Ğ»ÑŒ!" << endl;
 			return 0.0;
 		}
 	}
@@ -67,33 +67,33 @@ int main() {
 	double input1, input2;
 
 	while (true) {
-		cout << "Ââåäèòå num1: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ num1: ";
 		cin >> input1;
 
 		if (cin.fail()) {
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << "Íåâåğíûé ââîä!" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
 			continue;
 		}
 
 		if (!calc.set_num1(input1)) {
-			cout << "Íåâåğíûé ââîä!" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
 			continue;
 		}
 
-		cout << "Ââåäèòå num2: ";
+		cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ num2: ";
 		cin >> input2;
 
 		if (cin.fail()) {
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << "Íåâåğíûé ââîä!" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
 			continue;
 		}
 
 		if (!calc.set_num2(input2)) {
-			cout << "Íåâåğíûé ââîä!" << endl;
+			cout << "ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
 			continue;
 		}
 
@@ -106,16 +106,15 @@ int main() {
 			cout << input1 << " / " << input2 << " = " << calc.divide1_2() << endl;
 		}
 		else {
-			cout << input1 << " / " << input2 << " = äåëåíèå íà íîëü íåâîçìîæíî!" << endl;
+			cout << input1 << " / " << input2 << " = Ğ´ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° Ğ½Ğ¾Ğ»ÑŒ Ğ½ĞµĞ²Ğ¾Ğ·Ğ¼Ğ¾Ğ¶Ğ½Ğ¾!" << endl;
 		}
 
 		if (input1 != 0) {
 			cout << input2 << " / " << input1 << " = " << calc.divide2_1() << endl;
 		}
 		else {
-			cout << input2 << " / " << input1 << " = äåëåíèå íà íîëü íåâîçìîæíî!" << endl;
+			cout << input2 << " / " << input1 << " = Ğ´ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° Ğ½Ğ¾Ğ»ÑŒ Ğ½ĞµĞ²Ğ¾Ğ·Ğ¼Ğ¾Ğ¶Ğ½Ğ¾!" << endl;
 		}
 	}
 	return 0;
 }
-*/
